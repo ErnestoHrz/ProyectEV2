@@ -1,7 +1,9 @@
 const students=[]
 const tableBody=document.querySelector("#studentsTable tbody")
+const averageDiv=document.getElementById("average");
 document.getElementById("studentForm").addEventListener("submit",function (e){
 e.preventDefault();
+
 const name=document.getElementById("name").value.trim();
 const lastName=document.getElementById("lastName").value.trim();
 const grade=parseFloat(document.getElementById("grade").value);
